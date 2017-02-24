@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Alii jq</name>
+<widget id="com.alii.protocols" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Alii</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Alii protocols
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="info@alii.cc" href="http://alii.care">
+        Alii
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
