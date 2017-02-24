@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.alii.protocols" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Camera">
         <param name="browser-package" value="Camera" />
     </feature>
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Alii jq</name>
+    <name>Alii</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Alii protocols
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="info@alii.cc" href="http://alii.care">
+        Alii
     </author>
     <content src="index.html" />
     <icon src="icon.png" />

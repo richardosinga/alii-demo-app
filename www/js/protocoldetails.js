@@ -2,7 +2,8 @@ var protocolURL = 'http://alii.develop.crossmarx.nl/templates/mobileProtocol.vm?
 
 $('#detailsPage').live('pageshow', function(event) {
 	var id = getUrlVars()["id"];
-    $('#employeeTitle').load(protocolURL + id + "&authhash=" + authhash;');
+    var authhash = window.localStorage["authhash"];
+    $('#protocolDetails').attr("src", protocolURL + id + "&authhash=" + authhash);
 });
 
 function getUrlVars() {

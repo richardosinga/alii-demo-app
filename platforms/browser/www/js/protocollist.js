@@ -18,6 +18,7 @@ function checkPreAuth() {
     if(authhash.length > 1) {
         getProtocolList();
         $("#protocolListPage").show();
+        $("#loginPage").hide();
     } else {
        $("#loginPage").show();
     }
