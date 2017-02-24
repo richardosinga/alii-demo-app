@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/cx.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/index.css" />
+</head>
+    
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/protocollist.js"></script>
+<script src="js/protocoldetails.js"></script>
+<script src="http://192.168.1.124:8080/target/target-script-min.js#anonymous"></script>    
+
+<body>
+    
+<div id="loginPage" data-role="page">
+
+    <div data-role="header">
+        <h1>Login</h1>
+    </div>
+
+    <div data-role="content"> 
+
+        <form id="loginForm">
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" value="" placeholder="Username" />
+        </div>
+
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" placeholder="Password" />
+        </div>
+
+        <input type="submit" value="Login" id="submitButton">
+        </form>
+        
+    </div>
+
+    <div data-role="footer">
+        <h4>© Alii</h4>
+    </div>
+
+
+
+    <script>
+        $("#loginForm").submit(function(e) {
+                e.preventDefault();
+                handleLogin();
+                
+        });
+    </script>
+    
+</div>
+
+</body>
+
+</html>

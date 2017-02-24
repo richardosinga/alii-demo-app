@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>List of Protocols</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+    <link rel="stylesheet" href="css/cx.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+    <script src="js/protocollist.js"></script>
+    <script src="js/protocoldetails.js"></script>
+    <script src="http://192.168.1.124:8080/target/target-script-min.js#anonymous"></script>
+    
+</head>
+    
+<body>
+        
+<div id="protocolListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Protocols</h1>
+	</div>
+
+	<div data-role="content">
+         <ul id="protocolList" data-role="listview" data-filter="true">
+        </ul>
+    </div>		
+
+    
+    <form id="logoutForm">
+            <input type="submit" value="Logout" />
+    </form>
+    
+    <script>
+        $('#protocolListPage').bind('pageshow', function(event) {
+	       getEmployeeList();
+            });
+        
+        $("#logoutForm").submit(function(e) {
+            e.preventDefault();
+            window.localStorage["authhash"] = ''; 
+            $.mobile.changePage("index.html");
+            return false;
+            });
+        
+        
+        
+    </script>
+    
+    
+</div>    
+
+
+</body>
+
+</html>
