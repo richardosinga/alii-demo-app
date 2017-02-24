@@ -6,8 +6,8 @@
     "type": "git",
     "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
   },
-  "author": "PhoneGap Team",
-  "license": "Apache-2.0.0",
+  "author": "Alii",
+  "license": "(c) Alii 2017",
   "keywords": [
     "ecosystem:phonegap",
     "ecosystem:cordova",

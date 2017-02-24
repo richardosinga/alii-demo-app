@@ -2,8 +2,7 @@ var protocolURL = 'http://alii.develop.crossmarx.nl/templates/mobileProtocol.vm?
 
 $('#detailsPage').live('pageshow', function(event) {
 	var id = getUrlVars()["id"];
-    $('#employeeTitle').load(protocolURL + id + '&loginname=hoop&password=hoop');
-    console.log(protocolURL + id + '?loginname=hoop&password=hoop');
+    $('#employeeTitle').load(protocolURL + id + "&authhash=" + authhash;');
 });
 
 function getUrlVars() {
